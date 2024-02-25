@@ -7,7 +7,7 @@ async function bootstrap() {
     app.enableCors({
         origin: true,
     });
-    await app.listen(4000);
+    await app.listen(4040);
 }
 bootstrap();
 //# sourceMappingURL=main.js.map
