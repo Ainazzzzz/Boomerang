@@ -9,13 +9,13 @@ config();
   imports: [
     TypeOrmModule.forRoot({
       type: 'postgres',
-      host: process.env.DB_HOST || '127.0.0.1',
+      host: process.env.DB_HOST,
       port: +process.env.DB_PORT || 5432,
-      username: process.env.DB_USERNAME || 'postgres',
-      password: process.env.DB_PASSWORD || '',
-      database: process.env.DB_DATABASE || 'postgres',
+      username: process.env.DB_USERNAME,
+      password: process.env.DB_PASSWORD,
+      database: process.env.DB_DATABASE,
       entities: [Todo],
-      synchronize: false,
+      synchronize: true,
     }),
     TodoModule,
   ],
