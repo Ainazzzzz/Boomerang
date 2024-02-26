@@ -6,6 +6,6 @@ async function bootstrap() {
   app.enableCors({
     origin: true,
   });
-  await app.listen(4040);
+  await app.listen(3000);
 }
 bootstrap();
